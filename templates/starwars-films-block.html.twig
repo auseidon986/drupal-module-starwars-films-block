@@ -1,0 +1,10 @@
+{{ headline }}
+<hr/>
+{% for key,value in films %}
+<hr/>
+  <p>Title : <span>{{ value.title }}</span></p>
+  <p>Episode Id : <span>{{ value.episode_id }}</span></p>  
+  <p>Director : <span>{{ value.director }}</span></p>
+  <p>Producer : <span>{{ value.producer }}</span></p>
+  <p>Release Date : <span>{{ value.release_date|date('F j, Y') }}</span></p>
+{% endfor%}

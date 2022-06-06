@@ -1,0 +1,6 @@
+bio_paragraph.mybio:
+  path: /starwars
+  defaults:
+    _controller: Drupal\starwars\Controller\StarwarsController::index
+  requirements:
+    _permission: 'access content'

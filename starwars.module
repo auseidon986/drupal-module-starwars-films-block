@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\node\Entity\Node;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+
+/**
+ * Implements hook_theme().
+ */
+
+function starwars_theme() {
+  return [
+    'starwars_films_block' => [
+      'variables' => [
+        'headline' => '',
+        'films' => [],
+      ],
+    ],
+  ];
+}
+
